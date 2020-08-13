@@ -79,3 +79,6 @@ Things you may want to cover:
 | text    | text       | null:false |
 | user-id | references |            |
 
+### Association
+
+- belongs_to :items
