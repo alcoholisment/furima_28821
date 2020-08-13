@@ -65,6 +65,7 @@ Things you may want to cover:
 
 | Colomn         | Type       | Options    |
 | -------------- | ---------- | ---------- |
+| prefecture     | integer    | null:false |
 | postal-code    | string     | null:false |
 | city           | string     | null:false |
 | addresses      | string     | null:false |
@@ -77,3 +78,4 @@ Things you may want to cover:
 | ------- | ---------- | ---------- |
 | text    | text       | null:false |
 | user-id | references |            |
+
