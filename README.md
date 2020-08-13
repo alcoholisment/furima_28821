@@ -63,7 +63,6 @@ Things you may want to cover:
 | Colomn         | Type       | Options    |
 | -------------- | ---------- | ---------- |
 | postal-code    | string     | null:false |
-| prefecture     | references | null:false |
 | city           | string     | null:false |
 | addresses      | string     | null:false |
 | building       | string     |            |
