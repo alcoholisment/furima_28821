@@ -46,11 +46,11 @@ Things you may want to cover:
 | ------------------- | ---------- | ------------ |
 | image               | references | null:false   |
 | info                | text       | null:false   |
-| category            | references | null:false   |
-| sales-status        | references | null:false   |
-| shipping-fee-status | references | null:false   |
-| prefecture          | references | null:false   |
-| scheduled-delivery  | references | null:false   |
+| category            | integer    | null:false   |
+| sales-status        | integer    | null:false   |
+| shipping-fee-status | integer    | null:false   |
+| prefecture          | integer    | null:false   |
+| scheduled-delivery  | integer    | null:false   |
 | price               | string     | null:false   |
 
 ### Association
