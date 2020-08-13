@@ -62,10 +62,6 @@ Things you may want to cover:
 
 | Colomn         | Type       | Options    |
 | -------------- | ---------- | ---------- |
-| card-number    | string     | null:false |
-| card-exp-month | string     | null:false |
-| card-exp-year  | string     | null:false |
-| card-cvc       | string     | null:false |
 | postal-code    | string     | null:false |
 | prefecture     | references | null:false |
 | city           | string     | null:false |
