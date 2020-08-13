@@ -27,14 +27,16 @@ Things you may want to cover:
 
 ## users テーブル
 
-| Column     | Type   | Options      |
-| ---------- | ------ | ------------ |
-| nickname   | string | null: false  |
-| email      | string | null: false  |
-| password   | string | null: false  |
-| first_name | string | null: false  |
-| last_name  | string | null: false  |
-| birthday   | date   | null: false  |
+| Column          | Type   | Options      |
+| --------------- | ------ | ------------ |
+| nickname        | string | null: false  |
+| email           | string | null: false  |
+| password        | string | null: false  |
+| first-name      | string | null: false  |
+| last-name       | string | null: false  |
+| first-name-kana | string | null: false  |
+| last-name-kana  | string | null: false  |
+| birthday        | date   | null: false  |
 
 ### Association
 
@@ -73,4 +75,4 @@ Things you may want to cover:
 | Colomn  | Type       | Options    |
 | ------- | ---------- | ---------- |
 | text    | text       | null:false |
-| user_id | references |            |
+| user-id | references |            |
