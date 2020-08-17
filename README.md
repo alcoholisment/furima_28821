@@ -58,7 +58,7 @@ Things you may want to cover:
 | scheduled-delivery  | integer    | null:false                   |
 | price               | integer    | null:false                   |
 | user                | references | null:false foreign_key: true |
-| order               | references | null:false foreign_key: true |
+
 
 ### Association
 
