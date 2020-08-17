@@ -45,18 +45,18 @@ Things you may want to cover:
 
 ## items テーブル
 
-| Column              | Type       | Options           |
-| ------------------- | ---------- | ----------------- |
-| name                | string     | null:false        |
-| image               | string     | null:false        |
-| info                | text       | null:false        |
-| category            | integer    | null:false        |
-| sales-status        | integer    | null:false        |
-| shipping-fee-status | integer    | null:false        |
-| prefecture          | integer    | null:false        |
-| scheduled-delivery  | integer    | null:false        |
-| price               | string     | null:false        |
-| user-id             | references | foreign_key: true |
+| Column              | Type       | Options                      |
+| ------------------- | ---------- | ---------------------------- |
+| name                | string     | null:false                   |
+| image               | string     | null:false                   |
+| info                | text       | null:false                   |
+| category            | integer    | null:false                   |
+| sales-status        | integer    | null:false                   |
+| shipping-fee-status | integer    | null:false                   |
+| prefecture          | integer    | null:false                   |
+| scheduled-delivery  | integer    | null:false                   |
+| price               | string     | null:false                   |
+| user                | references | null:false foreign_key: true |
 
 ### Association
 
