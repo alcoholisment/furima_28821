@@ -47,7 +47,7 @@ Things you may want to cover:
 | Column              | Type       | Options      |
 | ------------------- | ---------- | ------------ |
 | name                | string     | null:false   |
-| image               | text       | null:false   |
+| image               | string     | null:false   |
 | info                | text       | null:false   |
 | category            | integer    | null:false   |
 | sales-status        | integer    | null:false   |
