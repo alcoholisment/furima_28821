@@ -86,7 +86,9 @@ Things you may want to cover:
 
 ## orders テーブル
 
-| Colomn         | Type       | Options                      |
+| Colomn | Type       | Options                      |
+| ------ | ---------- | ---------------------------- |
+| item   | references | null:false foreign_key: true |
 
 ### Association
 
