@@ -57,12 +57,13 @@ Things you may want to cover:
 | scheduled-delivery  | integer    | null:false                   |
 | price               | string     | null:false                   |
 | user                | references | null:false foreign_key: true |
+| order               | references | null:false foreign_key: true |
 
 ### Association
 
 - has_many :comments
 - has_one :shippings
-- has_one :order
+- has_one :orders
 
 ## shippings テーブル
 
