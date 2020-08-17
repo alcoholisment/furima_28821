@@ -95,6 +95,7 @@ Things you may want to cover:
 
 - belongs_to :item
 - belongs_to :user
+- has_one :shipping
 
 ## comments テーブル
 
