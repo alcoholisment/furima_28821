@@ -90,7 +90,7 @@ Things you may want to cover:
 
 ## orders テーブル
 
-
+| Colomn         | Type       | Options                      |
 
 ### Association
 
