@@ -42,6 +42,7 @@ Things you may want to cover:
 
 - has_many :items
 - has_one :orders
+- has_many :comments
 
 ## items テーブル
 
@@ -100,4 +101,5 @@ Things you may want to cover:
 
 ### Association
 
-- belongs_to :items
+- belongs_to :item
+- belongs_to :user
