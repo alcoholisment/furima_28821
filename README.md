@@ -56,7 +56,7 @@ Things you may want to cover:
 | shipping-fee-status | integer    | null:false                   |
 | prefecture          | integer    | null:false                   |
 | scheduled-delivery  | integer    | null:false                   |
-| price               | string     | null:false                   |
+| price               | integer    | null:false                   |
 | user                | references | null:false foreign_key: true |
 | order               | references | null:false foreign_key: true |
 
