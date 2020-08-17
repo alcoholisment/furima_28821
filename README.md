@@ -68,14 +68,16 @@ Things you may want to cover:
 
 ## shippings テーブル
 
-| Colomn         | Type       | Options    |
-| -------------- | ---------- | ---------- |
-| prefecture     | integer    | null:false |
-| postal-code    | string     | null:false |
-| city           | string     | null:false |
-| addresses      | string     | null:false |
-| building       | string     |            |
-| phone-number   | string     | null:false |
+| Colomn         | Type       | Options                      |
+| -------------- | ---------- | ---------------------------- |
+| prefecture     | integer    | null:false                   |
+| postal-code    | string     | null:false                   |
+| city           | string     | null:false                   |
+| addresses      | string     | null:false                   |
+| building       | string     |                              |
+| phone-number   | string     | null:false                   |
+| user           | references | null:false foreign_key: true |
+| item           | references | null:false foreign_key: true |
 
 ### Association
 
