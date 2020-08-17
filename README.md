@@ -92,10 +92,11 @@ Things you may want to cover:
 
 ## comments テーブル
 
-| Colomn  | Type       | Options    |
-| ------- | ---------- | ---------- |
-| text    | text       | null:false |
-| user    | references | null:false |
+| Colomn  | Type       | Options                      |
+| ------- | ---------- | ---------------------------- |
+| text    | text       | null:false                   |
+| user    | references | null:false                   |
+| items   | references | null:false foreign_key: true |
 
 ### Association
 
