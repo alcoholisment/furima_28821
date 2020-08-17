@@ -63,8 +63,8 @@ Things you may want to cover:
 ### Association
 
 - has_many :comments
-- has_one :shippings
-- has_one :orders
+- has_one :shipping
+- has_one :order
 
 ## shippings テーブル
 
@@ -79,7 +79,7 @@ Things you may want to cover:
 
 ### Association
 
-- has_one :orders
+- has_one :order
 
 ## orders テーブル
 
