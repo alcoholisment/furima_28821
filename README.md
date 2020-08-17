@@ -95,7 +95,7 @@ Things you may want to cover:
 | Colomn  | Type       | Options    |
 | ------- | ---------- | ---------- |
 | text    | text       | null:false |
-| user-id | references |            |
+| user    | references | null:false |
 
 ### Association
 
