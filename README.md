@@ -59,10 +59,10 @@ Things you may want to cover:
 ### Association
 
 - has_many :comments
-- has_one :buy
+- has_one :shippings
 - has_one :order
 
-## buy テーブル
+## shippings テーブル
 
 | Colomn         | Type       | Options    |
 | -------------- | ---------- | ---------- |
@@ -77,7 +77,7 @@ Things you may want to cover:
 
 - belongs_to :items
 
-## order テーブル
+## orders テーブル
 
 | Column  | Type       | Options |
 | ------- | ---------- | ------- |
