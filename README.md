@@ -66,6 +66,7 @@ Things you may want to cover:
 - has_many :comments
 - has_one :shipping
 - has_one :order
+- belongs_to :user
 
 ## shippings テーブル
 
