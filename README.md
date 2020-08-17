@@ -78,7 +78,6 @@ Things you may want to cover:
 
 ### Association
 
-- belongs_to :items
 - has_one :orders
 
 ## orders テーブル
