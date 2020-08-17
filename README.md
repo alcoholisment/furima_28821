@@ -41,6 +41,7 @@ Things you may want to cover:
 ### Association
 
 - has_many :items
+- has_one :orders
 
 ## items テーブル
 
@@ -77,6 +78,7 @@ Things you may want to cover:
 ### Association
 
 - belongs_to :items
+- has_one :orders
 
 ## orders テーブル
 
@@ -85,6 +87,8 @@ Things you may want to cover:
 ### Association
 
 - belongs_to :items
+- belongs_to :users
+- belongs_to :shippings
 
 ## comments テーブル
 
