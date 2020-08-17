@@ -60,6 +60,7 @@ Things you may want to cover:
 
 - has_many :comments
 - has_one :buy
+- has_one :order
 
 ## buy テーブル
 
@@ -71,6 +72,20 @@ Things you may want to cover:
 | addresses      | string     | null:false |
 | building       | string     |            |
 | phone-number   | string     | null:false |
+
+### Association
+
+- belongs_to :items
+
+## order テーブル
+
+| Column  | Type       | Options |
+| ------- | ---------- | ------- |
+| history | references |         |
+
+### Association
+
+- belongs_to :items
 
 ## comments テーブル
 
