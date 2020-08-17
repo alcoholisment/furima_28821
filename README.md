@@ -104,7 +104,7 @@ Things you may want to cover:
 | ------- | ---------- | ---------------------------- |
 | text    | text       | null:false                   |
 | user    | references | null:false                   |
-| items   | references | null:false foreign_key: true |
+| item    | references | null:false foreign_key: true |
 
 ### Association
 
