@@ -47,6 +47,8 @@ describe User do
       it 'passwordに英字と数字が入っていないと登録できない' do
         @user.password = 'aaaaaa'
         @user.password_confirmation = 'aaaaaa'
+        @user.password = '111111'
+        @user.password_confirmation = '111111'
         @user.valid?
         expect(@user.errors.full_messages).to include
       end
