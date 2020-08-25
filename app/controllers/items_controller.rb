@@ -1,7 +1,7 @@
 class ItemsController < ApplicationController
 
   def index
-    @items = Item.all
+    @items = Item.all.order("created_at DESC")
   end
 
   def new
@@ -13,7 +13,7 @@ class ItemsController < ApplicationController
     if @item.save
       redirect_to  items_path
     else
-      redirect_to  new_item_path
+      render :new
     end
   end
 
