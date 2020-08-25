@@ -17,7 +17,7 @@ class Item < ApplicationRecord
     validates :shipping_fee_status
     validates :prefecture
     validates :scheduled_delivery
-    validates :price
+    validates :price, numericality: { only_integer: true, greater_than: 300, less_than: 9999999}
   end
   has_one_attached :image
 end
