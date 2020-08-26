@@ -1,7 +1,6 @@
 class ItemsController < ApplicationController
-
   def index
-    @items = Item.all.order("created_at DESC")
+    @items = Item.all.order('created_at DESC')
   end
 
   def new
@@ -11,7 +10,7 @@ class ItemsController < ApplicationController
   def create
     @item = Item.new(item_params)
     if @item.save
-      redirect_to  items_path
+      redirect_to items_path
     else
       render :new
     end
@@ -22,5 +21,4 @@ class ItemsController < ApplicationController
   def item_params
     params.require(:item).permit(:name, :image, :info, :genre_id, :sales_status_id, :shipping_fee_status_id, :prefecture_id, :scheduled_delivery_id, :price).merge(user_id: current_user.id)
   end
-
 end
