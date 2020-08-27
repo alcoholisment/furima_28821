@@ -9,9 +9,9 @@ class Item < ApplicationRecord
   validates :genre_id, :prefecture_id, :sales_status_id, :scheduled_delivery_id, :shipping_fee_status_id, numericality: { other_than: 1 }
   belongs_to :user
   with_options presence: true do
-    validates :name
+    validates :name, length: { maximum: 40 }
     validates :image
-    validates :info
+    validates :info, length: { maximum: 1000 }
     validates :genre
     validates :sales_status
     validates :shipping_fee_status

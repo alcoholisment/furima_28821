@@ -16,3 +16,4 @@ function price() {
   })
 }
 window.addEventListener('load', price)
+document.addEventListener("turbolinks:load", price)
