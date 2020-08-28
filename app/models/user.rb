@@ -6,21 +6,20 @@ class User < ApplicationRecord
 
   has_many :items
 
-  regEx1 = /\A[ぁ-んァ-ン一-龥]/
-  regEx2 = /\A[ァ-ヶー－]+\z/
+  regex1 = /\A[ぁ-んァ-ン一-龥]/
+  regex2 = /\A[ァ-ヶー－]+\z/
 
   validates :name, presence: true
   validates :password, format: { with: /\A(?=.*?[a-z])(?=.*?\d)[a-z\d]+\z/i }
 
-  with_options presence: true, format: { with: /#{regEx1}/ } do
+  with_options presence: true, format: { with: /#{regex1}/ } do
     validates :first_name
     validates :last_name
   end
 
-  with_options presence: true, format: { with: /#{regEx2}/ } do
+  with_options presence: true, format: { with: /#{regex2}/ } do
     validates :first_name_kana
     validates :last_name_kana
   end
   validates :birthday, presence: true
-
 end
