@@ -12,6 +12,11 @@ RSpec.describe ItemTransaction, type: :model do
       @item_transaction.building = nil
       expect(@item_transaction).to be_valid
     end
+    it 'tokenが空だと保存できない' do
+      @item_transaction.token = nil
+      @item_transaction.valid?
+      expect(@item_transaction.errors.full_messages).to include("Token can't be blank")
+    end
     it 'postal_codeが空だと保存できない' do
       @item_transaction.postal_code = nil
       @item_transaction.valid?
