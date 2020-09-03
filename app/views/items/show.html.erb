@@ -34,11 +34,7 @@
   <%= link_to '削除', item_path(@item.id), method: :delete, class:'item-destroy' %>
 <% else %>
   <% unless @item.order != nil %>
-    <% if user_signed_in? %>
       <%= link_to '購入画面に進む', item_orders_path(@item.id), method: :get, class:"item-red-btn"%>
-    <% else %>
-      <%= link_to '購入画面に進む', new_user_session_path ,class:"item-red-btn"%>
-    <% end %>
   <% end %>
 <% end %>
 
