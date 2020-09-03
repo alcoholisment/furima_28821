@@ -5,6 +5,8 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :items
+  has_many :orders
+  has_one :shipping
 
   regex1 = /\A[ぁ-んァ-ン一-龥]/
   regex2 = /\A[ァ-ヶー－]+\z/
