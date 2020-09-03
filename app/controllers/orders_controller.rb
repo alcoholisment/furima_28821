@@ -1,6 +1,10 @@
 class OrdersController < ApplicationController
   before_action :set_item
   def index
+    unless user_signed_in?
+      redirect_to new_user_session_path
+      return
+    end
     if user_signed_in? && current_user.id != @item.user_id && @item.order == nil
       @order = ItemTransaction.new
     else
