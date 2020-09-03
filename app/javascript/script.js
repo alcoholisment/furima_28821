@@ -3,8 +3,8 @@ function price() {
   const price = document.getElementById("item-price")
   const tax = document.getElementById("add-tax-price")
   const profit = document.getElementById("profit")
-  let tax_num = 0
-  let profit_num = 0
+  let tax_num = ""
+  let profit_num = ""
   tax.innerHTML = tax_num
   profit.innerHTML = profit_num
 
