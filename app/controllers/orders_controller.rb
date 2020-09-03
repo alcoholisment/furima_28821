@@ -1,7 +1,11 @@
 class OrdersController < ApplicationController
   before_action :set_item
   def index
+    unless current_user.id == @item.user_id
     @order = ItemTransaction.new
+    else
+    redirect_to root_path
+    end
   end
 
   def new
