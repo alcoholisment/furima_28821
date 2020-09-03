@@ -1,5 +1,4 @@
 class ItemTransaction
-
   include ActiveModel::Model
   attr_accessor :item_id, :user_id, :token, :postal_code, :prefecture_id, :city, :address, :building, :phone_number
 
